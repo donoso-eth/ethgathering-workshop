@@ -7,11 +7,11 @@ require("dotenv");
 
 async function main() {
 
-  const url = `${process.env.KOVAN_RPC_URL}`;
+  const url = `${process.env.GOERLI_RPC_URL}`;
   const customHttpProvider = new ethers.providers.JsonRpcProvider(url);
 
   const sf = await Framework.create({
-    chainId: 42,
+    chainId: 5,
     provider: customHttpProvider,
     customSubgraphQueriesEndpoint: "",
     dataMode: "WEB3_ONLY"
@@ -26,7 +26,7 @@ async function main() {
 
   const deleteFlowOperation = sf.cfaV1.deleteFlow({
       sender: signer.address,
-      receiver: "0x1114a6880EF8cE89Cf108830eaE2f3D66a4951ca", //tradeable cashflow address
+      receiver: "0x2533b505b4a60EA32ea606BF623aDBE949a0E19E", //tradeable cashflow address
       superToken: daix.address,
   });
 

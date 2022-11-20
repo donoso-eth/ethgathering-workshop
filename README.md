@@ -33,5 +33,11 @@ is changed on-transfer through the Open Zeppelin ERC721 `_beforeTransfer` hook.
 ## Compile
 ```yarn build``` or ```npx hardhat compile```
 
-## verify 
+## Deploy
+```npx hardhat deploy```
+
+## Verify 
 ```npx hardhat verify --constructor-args arguments.js  --network goerli 0x2533b505b4a60EA32ea606BF623aDBE949a0E19E```
+
+## Create Flow
+```npx hardhat run scripts/createFlow.js```
