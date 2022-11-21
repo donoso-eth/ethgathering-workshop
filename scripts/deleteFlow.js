@@ -26,7 +26,7 @@ async function main() {
 
   const deleteFlowOperation = sf.cfaV1.deleteFlow({
       sender: signer.address,
-      receiver: "0x2533b505b4a60EA32ea606BF623aDBE949a0E19E", //tradeable cashflow address
+      receiver: "ADDRESS", //tradeable cashflow address
       superToken: daix.address,
   });
 

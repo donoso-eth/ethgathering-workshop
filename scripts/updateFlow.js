@@ -25,7 +25,7 @@ async function main() {
   const daix = await sf.loadSuperToken("fDAIx");
 
   const updateFlowOperation = sf.cfaV1.updateFlow({
-      receiver: "0x2533b505b4a60EA32ea606BF623aDBE949a0E19E", //tradeable cashflow address
+    receiver: "ADDRESS", //tradeable cashflow address
       superToken: daix.address,
       flowRate: "2000000000000000"
   });
